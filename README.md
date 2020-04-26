@@ -1,9 +1,14 @@
 # Raspberry-password-pi-recovery
 Restore pi password - Raspbian password - raspberry password pi recovery
 
-If you forgot the raspberry password with Raspbian, you can reset it! The procedure involves inserting the microsd on your PC and modifying the file inside the cmdline.txt file by inserting at the end of the present string:
+If you forgot the raspberry password with Raspbian, you can reset it! The procedure involves inserting the microsd on your PC and modifying the file inside the cmdline.txt (in boot partition of microSD) file by inserting at the end of the present string:
 
-	"init = / bin / sh" (without the quotes)
+	"init=/bin/sh" (without the quotes)
+
+Original string: 
+	console=serial0,115200 console=tty1 root=PARTUUID=738a4d67-02 rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait init=/bin/sh 
+	
+New String: console=serial0,115200 console=tty1 root=PARTUUID=738a4d67-02 rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait
 
 save and unmount the sd from the pc and put it back in the raspberry
 
