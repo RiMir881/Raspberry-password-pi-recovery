@@ -5,11 +5,11 @@ If you forgot the raspberry password with Raspbian, you can reset it! The proced
 
 	"init=/bin/sh" (without the quotes)
 
-Original string: 
+Original string (cmdline.txt): 
 
 	console=serial0,115200 console=tty1 root=PARTUUID=738a4d67-02 rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait init=/bin/sh 
 	
-New String: 
+New String  (cmdline.txt): 
 
 	console=serial0,115200 console=tty1 root=PARTUUID=738a4d67-02 rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait
 
