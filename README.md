@@ -29,7 +29,7 @@ enter the new password followed by password confirmation.
 
 type hours:
 
-	"Sync"
+	"sync"
 
 Now you can turn off your raspberry, put the microsd back on the pc and delete the last part inserted from the cmdline.txt file: "init = / bin / sh" save, unmount the microsd from your pc and put it back in the raspberry. At startup, you should be able to log in with user "pi" and the new password you just set.
 
